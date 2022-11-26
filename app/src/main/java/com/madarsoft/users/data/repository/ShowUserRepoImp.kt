@@ -13,13 +13,7 @@ import javax.inject.Singleton
 class ShowUserRepoImp @Inject constructor(private val usersDatabase: UsersDatabase) : ShowUserRepo {
 
 
-    override fun getUsers(): Flow<List<User>> =
-
-        flow {
-
-                emit(usersDatabase.getDao().getUsers())
-
-            }
+    override fun getUsers(): Flow<List<User>> = flow { emit(usersDatabase.getDao().getUsers()) }
 
 
 }

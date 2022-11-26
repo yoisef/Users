@@ -57,7 +57,6 @@ class ShowUsersFragment : Fragment() {
         lifecycleScope.launchWhenStarted {
             viewModel.getUsersStatus.collect{
 
-                it ->
                 when(it.status)
                 {
                     Status.SUCCESS ->{

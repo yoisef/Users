@@ -26,7 +26,6 @@ class ShowUsersViewModel @Inject constructor(private val showUserRepo: ShowUserR
         viewModelScope.launch {
             _getUsersStatus.value=Resource.loading(null)
             showUserRepo.getUsers().collect{
-                it ->
                 if (it.isNotEmpty())
                 {
                     _getUsersStatus.value=Resource.success(it)

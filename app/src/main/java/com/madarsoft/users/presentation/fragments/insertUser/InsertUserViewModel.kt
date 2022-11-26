@@ -26,9 +26,9 @@ class InsertUserViewModel @Inject constructor(private val insertUserRepo: Insert
     {
         viewModelScope.launch {
             _insertStatus.emit(Resource.loading(null))
-            insertUserRepo.insertUser(user).collect {   it ->
+            insertUserRepo.insertUser(user).collect {
 
-                Log.e("resul","==$it")
+                //Check Insertion
                 if (it==-1L)
                 {
                    _insertStatus.emit(Resource.error(it,"Inserted Failed"))

@@ -125,7 +125,7 @@ class InsertUserFragment : Fragment() {
             validateAndInsertUser()
         }
 
-        binding.genderRadioGroup.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { group, checkedId ->
+        binding.genderRadioGroup.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { _, _ ->
             binding.maleRadioButton.error=null
             binding.femaleRadioButton.error=null
         })

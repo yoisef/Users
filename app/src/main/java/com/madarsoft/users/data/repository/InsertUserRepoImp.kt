@@ -11,10 +11,8 @@ import javax.inject.Singleton
 class InsertUserRepoImp @Inject constructor(private val usersDatabase: UsersDatabase) : InsertUserRepo {
 
 
-    override fun insertUser(user: User) =
-    flow {
-        emit(usersDatabase.getDao().insertUser(user))
-            }
+    override fun insertUser(userObject: User) = flow { emit(usersDatabase.getDao().insertUser(userObject))
+    }
 
 
     }

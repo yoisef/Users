@@ -40,10 +40,6 @@ abstract class RepositoriesModule {
 
 }
 
-
-
-
-
 @Retention(AnnotationRetention.RUNTIME)
 @Qualifier
 annotation class ApplicationScope
