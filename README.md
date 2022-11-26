@@ -1,7 +1,9 @@
 # Users
 -----------------------------------------------------------
-App Sceniore:- 
-First screen:- purpose of it  : Takes user's name, age, job title and gender then saves those data on local db
+App Sceniore:-
+
+First screen:- purpose of it   Takes user's name, age, job title and gender then saves those data on local db.
+
 Second screen:- purpose of it : Show saved data
 
 using :-
