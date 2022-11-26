@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/insertUser">
+
+    <fragment
+        android:id="@+id/insertUser"
+        android:name="com.madarsoft.users.presentation.fragments.insertUser.InsertUserFragment"
+        android:label="Insert User"
+        tools:layout="@layout/fragment_insert_user" >
+        <action
+            android:id="@+id/action_insertUser_to_showUsersFragment"
+            app:destination="@id/showUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showUsersFragment"
+        android:name="com.madarsoft.users.presentation.fragments.showUsers.ShowUsersFragment"
+        android:label="Saved Users"
+        tools:layout="@layout/fragment_show_users" >
+        <action
+            android:id="@+id/action_showUsersFragment_to_insertUser"
+            app:destination="@id/insertUser" />
+    </fragment>
+</navigation>
