@@ -16,6 +16,8 @@ Background Thread -> Coroutine & Cold Streams like Flow & Hot Streams like State
 
 design architecture -> MVVM
 
+Dependency Injection -> Hilt
+
 Local Database ->Room Library 
 
 Local And Instrumented Tests
